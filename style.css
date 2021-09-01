@@ -37,6 +37,7 @@ body{
 }
 
 .nav{
+    justify-content: space-between; z-index: 99;
     margin: 0px;
     height: 96px;
     width: 100vw;
@@ -81,6 +82,7 @@ body{
     height: 2px;
     width: 48px;
     border-radius: 6px;
+    
 }
 
 .name{
@@ -89,7 +91,6 @@ body{
 
 .subhead{
     font-family: 'Quicksand', sans-serif;
-    padding-left: 10px;
     font-size: large;
     
 }
@@ -159,7 +160,8 @@ body{
 }
 
 .lp-para{
-    margin-left: 120px;
+    margin-left: 130px;
+    margin-right: 48px;
 }
 
 .button1:hover{
@@ -220,8 +222,8 @@ body{
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     outline: 0;
-
 }
+
 input:focus{
     border: 3px #0050ff;
     border-style: none none solid none;
@@ -238,6 +240,7 @@ input:focus{
     background-repeat: no-repeat;
     padding: 4px 8px 4px 8px;
     border-radius: 4px;
+    text-align: center;
 }
 
 .face1{
@@ -251,6 +254,7 @@ input:focus{
     -webkit-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
     -moz-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
 }
+
 .face2{
     width: 200px;
     height: 60px;
@@ -282,6 +286,7 @@ input:focus{
     -webkit-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
     -moz-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
 }
+
 .face4{
     width: 200px;
     height: 224px;
@@ -301,6 +306,7 @@ input:focus{
     background-color: #450034;
     color: #FF61F6;
     width: 14px;
+    height: 14px;
     padding: 4px;
     font-size: x-small;
     padding-bottom: 5px;
@@ -315,6 +321,7 @@ input:focus{
     background-color: #2D0402;
     color: #FF9A00;
     width: 14px;
+    height: 14px;
     padding: 4px;
     font-size: x-small;
     padding-bottom: 5px;
@@ -329,11 +336,13 @@ input:focus{
     background-color: #0057FF;
     color: white;
     width: 14px;
+    height: 14px;
     padding: 4px;
     font-size: x-small;
     padding-bottom: 5px;
     border-radius: 20px;
     text-align: center;
+    
     font-weight: 600;
     margin: 18px 4px 0px 4px;
 }
@@ -341,7 +350,7 @@ input:focus{
 .tcss{
     background-image: url('cards/tcss.png');
     background-size: contain;
-    width: 14px;
+    width: 24px;
     height: 24px;
     margin: 18px 4px 0px 4px;
     border-radius: 100%;
@@ -350,7 +359,7 @@ input:focus{
 .alpine{
     background-image: url('cards/alpine.png');
     background-size: contain;
-    width: 14px;
+    width: 24px;
     height: 24px;
     margin: 18px 4px 0px 4px;
     border-radius: 100%;
@@ -359,7 +368,7 @@ input:focus{
 .github{
     background-image: url('cards/github.png');
     background-size: contain;
-    width: 14px;
+    width: 24px;
     height: 24px;
     margin: 18px 4px 0px 4px;
     border-radius: 100%;
@@ -368,7 +377,7 @@ input:focus{
 .figma{
     background-image: url('cards/figma.png');
     background-size: contain;
-    width: 14px;
+    width: 24px;
     height: 24px;
     margin: 18px 4px 0px 4px;
     border-radius: 100%;
@@ -415,5 +424,509 @@ input:focus{
 .formbox{
     border-radius: 0px 4px 4px 0px;
     
+}
+
+#landingpage1{
+    width: 40vw;
+}
+
+
+
+.navbar{
+    list-style: none; margin-right: 96px;
+
+}
+
+.name{
+    font-size: x-large;
+}
+
+.cardrow{
+    height: 390px;
+    padding-top: 12px;
+    overflow-x: scroll;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#skillrow1{
+    margin-top: 48px; margin-bottom: 52px;
+}
+
+#skillrow2{
+    margin-top: 48px; margin-bottom: 52px;
+}
+
+.lp-para-main{
+    max-width: 700px;
+}
+
+.send{
+    margin-top: 24px; margin-bottom: 18px; font-size:small; margin-left: 32px;
+}
+
+#logo{
+    max-width: 340px;
+    margin-left: 64px;
+}
+.burgerbutton{
+    margin-right: 32px;
+}
+
+@media (max-width: 1920px) { 
+    
+    #card{
+    margin-left: 460px;
+    }
+    .cardrow{
+        overflow: hidden;
+    }
+    #projects{
+        margin-bottom: 48px;
+    }
+    .cardrow{
+        margin-top: 24px; margin-bottom: 52px;
+    }
+    #linefix{
+        margin-left: 130px;
+    }
+}
+
+
+@media (max-width: 1824px) { 
+    .lp-para-main{
+        width: 400;
+    }
+
+    #card{
+    margin-left: 400px;
+    }
+    .cardrow{
+        overflow: hidden;
+    }
+    #projects{
+        margin-bottom: 48px;
+    }
+    
+}
+
+@media (max-width: 1694px) { 
+    #card{
+    margin-left: 360px;
+    }
+    .cardrow{
+        overflow: hidden;
+    }
+    #projects{
+        margin-bottom: 48px;
+    }
+    .cardrow{
+        margin-top: 8px; margin-bottom: 48px;
+    }
+}
+
+
+@media (max-width: 1536px) { 
+    #card{
+    margin-left: 330px;
+    }
+    .cardrow{
+        overflow: hidden;
+    }
+    #projects{
+        margin-bottom: 48px;
+    }
+    .cardrow{
+        margin-top: 4px; margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 1408px) { 
+    #card{
+    margin-left: 240px;
+    }
+    
+    .lp-para{
+        margin-left: 90px;
+    }
+    .cardrow{
+        overflow: hidden;
+        margin-top: 12px; margin-bottom: 26px;
+    }
+    #projects{
+        margin-bottom: 48px;
+    }
+    #linefix{
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 1280px) {
+    #card{
+        margin-left: 130px;
+    }
+
+    .lp-para{
+        margin-left: 70px;
+    }
+    .cardrow{
+        overflow: hidden;
+        margin-top: 0px; margin-bottom: 52px;
+        
+    }
+    #projects{
+        margin-bottom: 48px;
+    }
+    #linefix{
+        margin-left: 70px;
+    }
+    
+}
+@media (min-width: 1024px) {
+    .burgerbutton{
+        visibility: visible;
+    }
+}
+
+@media (max-width: 1024px) {
+    #card{
+        margin-left: 85px;
+    }
+    .cardrow{
+        margin-top: 0px; margin-bottom: 26px;
+        overflow-x: scroll;
+        width: 100vw;
+        align-items: start;
+        justify-content:start;
+    }
+    .dev{
+        align-items: center;
+        justify-content: center;
+    }
+    .lp-para{
+        margin-left: 70px;
+        width: 440px;
+    }
+    .navbar{
+        visibility: hidden;
+        width: 0px;
+    }
+    
+    #projects{
+        margin-bottom: 48px;
+    }
+    .firstcard{
+        margin-left: 48px;
+    }
+    .lastcard{
+        margin-right: 48px;
+    }
+    #logo{
+        max-width: 280px;
+        margin-left: 32px;
+    }
+    
+    
+ }
+
+@media (max-width: 870px){
+    #card{
+        margin-left: 20px;
+    }
+    .lp-para{
+        width: 350px;
+    }
+    .name{
+        font-size:medium;
+    }
+    #projects{
+        margin-bottom: 48px;
+    }
+    .cardrow{
+        margin-top: 4px; margin-bottom: 12px;
+        
+    }
+    .firstcard{
+        margin-left: 48px;
+    }
+    .lastcard{
+        margin-right: 48px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    #landingpage{      
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #landingpage1{
+        width: 100vw;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    #card{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #landingpage2{ 
+        width: 90vw;
+    }
+    .cardrow{
+        margin-top: 4px; margin-bottom: 24px;
+        overflow-x: scroll;
+        width: 100vw;
+        align-items: start;
+        justify-content:start;
+    }
+    .dev{
+        align-items: center;
+        justify-content: center;
+    }
+    .lp-para-main{
+        align-items: center;
+        justify-content: center;
+        margin: 0px 16px 48px 16px ;
+        flex-direction: column;
+        
+    }
+    .lp-para{
+        margin: auto;
+        width: auto;
+        text-align: center;
+    }
+    
+    #skillrow1{
+        margin-top: 48px; margin-bottom: 52px;
+    }
+    
+    #skillrow2{
+        margin-top: 48px; margin-bottom: 52px;
+    }
+    #projects{
+        margin-bottom: 24px;
+    }
+    #linefix{
+        margin-right: 70px;
+    }
+    #logo{
+        max-width: 310px;
+        margin-left: 32px;
+    }
+    .bgimg{
+        background-image: url("bgimg5.png");
+    }
+         
+ }
+
+@media (max-width: 640px) {
+    body{
+        overflow-x: hidden;
+        width: 100vw;
+    }
+    .cardrow{
+        margin-top: 0px; margin-bottom: 12px;
+        overflow-x: scroll;
+        width: 100vw;
+        align-items: start;
+        justify-content:start;
+    }
+    #projects{
+        margin-bottom: 18px;
+    }
+    #contactform{
+        flex-direction: column;
+    }
+    .contactimg{
+        width: 360px;
+        border-radius: 4px 4px 0px 0px;
+        height: 250px;
+        align-items: center;
+        justify-content: center;
+        background-image: url('bg.gif');
+        background-size: cover;
+    }
+
+    .contactimg img{
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        padding-right: 38px;
+    }
+    .formbox{
+        align-items: center;
+        justify-content: center;
+    }
+    .send{
+        margin-right: 32px;       
+    }
+    .form{
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+    #skillmainrow{
+        flex-direction: column;
+    }
+    #skillrow1{
+        margin-top: 48px; margin-bottom: 12px;
+    }
+    
+    #skillrow2{
+        margin-top: 18px; margin-bottom: 52px;
+    }
+    #linefix{
+        margin-right: 70px;
+    }
+    
+}
+
+@media (max-width: 472px){
+    #card{
+        margin-top: 100px;
+        margin-bottom: 32px;
+        width: 340px;
+        
+    }
+    #card-bottom{
+        width: 340px;
+    }
+    .lp2fix{
+        margin-top: 18px;
+    }
+
+    .modes{
+        flex-direction: column;
+    }
+    .cardeffect{
+        margin: 10px;
+    }
+    .firstcard{
+        margin-left: 32px;
+    }
+    .lastcard{
+        margin-right: 32px;
+    }
+    .gffix{
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+    #logo{
+        width: 240px;
+        margin-left: 16px;
+    }
+    .nav{
+        height: 76px;
+    }
+}
+
+@media (max-width: 375px){
+    #card{
+        margin-top: 100px;
+        margin-bottom: 48px;
+    }
+    #project-subhead{
+        flex-direction: column;
+    }
+    .firstcard{
+        margin-left: 16px;
+    }
+    .lastcard{
+        margin-right: 16px;
+    }
+    #logo{
+        max-width: 210px;
+        margin-left: 16px;
+    }
+    .nav{
+        height: 64px;
+    }
+    .lp2fix{
+        margin-top: 12px;
+    }
+}   
+
+@media (max-width: 320px){
+    .skillbox img{
+        width: 32px;
+        height: 32px;
+    }
+    .skillbox{
+        width: 32px;
+        height: 32px;
+    }
+    #card{
+        width: 300px;
+    }
+    #card-bottom{
+        width: 300px;
+    }
+    .contactimg{
+        width: 320px;
+    }
+    .formbox{
+        width: 320px;
+    }
+    
+    .name{
+        font-size:smaller;
+        margin-left: 2px;
+    }
+    .subhead{
+        font-size:smaller;
+    }
+    #rect{
+        margin: 10px;
+    }
+    .firstcard{
+        padding-left: 16px;
+    }
+    .lastcard{
+        padding-right: 16px;
+    }
+    .lp2fix{
+        margin-top: 14px;
+    }
+}    
+
+@media (max-width: 280px){
+    #card{
+        width: 260px;
+    }
+    #card-bottom{
+        width: 260px;
+    }
+    .contactimg{
+        width: 280px;
+    }
+    .formbox{
+        width: 280px;
+    }
+    .form{
+        width: 260px;
+    }
+    .gffix{
+        text-align: center;
+        margin: 0px 8px 0px 8px;
+        font-size: 12px;
+    }
+    .lp-para-main{
+        margin: 0px;        
+    }
+    #card{
+        margin-top: 130px;
+        margin-bottom: 48px;
+    }
+    .lp2fix{
+        margin-top: 12px;
+    }  
 }
 
