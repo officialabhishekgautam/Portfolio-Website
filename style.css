@@ -37,7 +37,8 @@ body{
 }
 
 .nav{
-    justify-content: space-between; z-index: 99;
+    justify-content: space-between;
+    z-index: 99;
     margin: 0px;
     height: 96px;
     width: 100vw;
@@ -325,7 +326,7 @@ input:focus{
     padding: 4px;
     font-size: x-small;
     padding-bottom: 5px;
-    border-radius: 20px;
+    border-radius:100%;
     text-align: center;
     font-weight: 600;
     margin: 18px 4px 0px 4px;
@@ -474,6 +475,56 @@ input:focus{
     margin-right: 32px;
 }
 
+#closer{
+    float: right;
+    margin: 21.5px 18px 0px 0px;
+}
+
+button{
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor:pointer;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+}
+ 
+#closebt{
+    margin-right: 18px;
+}
+
+#sidebar{
+    width: 70%;
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    transition: transform .2s;
+    background-color: white;
+    -webkit-box-shadow: 0px -1px 112px -36px rgba(199,199,199,1);
+-moz-box-shadow: 0px -1px 112px -36px rgba(199,199,199,1);
+box-shadow: 0px -1px 112px -36px rgba(199,199,199,1);
+}
+.mt{
+    margin-top: 40px;
+}
+
+#sidebar.collapsed {
+    transform: translate(100%);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{ 
+    color:#0050ff;
+}
+
+
+
 @media (max-width: 1920px) { 
     
     #card{
@@ -490,6 +541,12 @@ input:focus{
     }
     #linefix{
         margin-left: 130px;
+    }
+    .firstcard{
+        margin-left: 48px;
+    }
+    .lastcard{
+        margin-right: 48px;
     }
 }
 
@@ -508,6 +565,12 @@ input:focus{
     #projects{
         margin-bottom: 48px;
     }
+    .firstcard{
+        margin-left: 48px;
+    }
+    .lastcard{
+        margin-right: 48px;
+    }
     
 }
 
@@ -524,6 +587,12 @@ input:focus{
     .cardrow{
         margin-top: 8px; margin-bottom: 48px;
     }
+    .firstcard{
+        margin-left: 48px;
+    }
+    .lastcard{
+        margin-right: 48px;
+    }
 }
 
 
@@ -539,6 +608,12 @@ input:focus{
     }
     .cardrow{
         margin-top: 4px; margin-bottom: 36px;
+    }
+    .firstcard{
+        margin-left: 48px;
+    }
+    .lastcard{
+        margin-right: 48px;
     }
 }
 
@@ -559,6 +634,12 @@ input:focus{
     }
     #linefix{
         margin-left: 90px;
+    }
+    .firstcard{
+        margin-left: 48px;
+    }
+    .lastcard{
+        margin-right: 48px;
     }
 }
 
@@ -581,12 +662,30 @@ input:focus{
     #linefix{
         margin-left: 70px;
     }
+    .firstcard{
+        margin-left: 48px;
+    }
+    .lastcard{
+        margin-right: 48px;
+    }
     
 }
 @media (min-width: 1024px) {
-    .burgerbutton{
-        visibility: visible;
+    #sidebar{
+       -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+       box-shadow: none;
     }
+    #closebt{
+        width: 0px;
+        visibility:collapse;
+        
+    }
+    #closebt svg{
+        width: 0px;
+        visibility:collapse;
+    }
+    
 }
 
 @media (max-width: 1024px) {
@@ -612,6 +711,9 @@ input:focus{
         visibility: hidden;
         width: 0px;
     }
+    .navdiv{
+        width: 0px;
+    }
     
     #projects{
         margin-bottom: 48px;
@@ -626,7 +728,12 @@ input:focus{
         max-width: 280px;
         margin-left: 32px;
     }
-    
+    #sidebar{
+        width: 40%;
+    }
+    #closer{
+        margin-top: 32px;
+    }
     
  }
 
@@ -654,9 +761,11 @@ input:focus{
         margin-right: 48px;
     }
     
+    
 }
 
 @media (max-width: 768px){
+    
     #landingpage{      
         display: flex;
         flex-direction: column;
@@ -723,7 +832,7 @@ input:focus{
     .bgimg{
         background-image: url("bgimg5.png");
     }
-         
+     
  }
 
 @media (max-width: 640px) {
@@ -785,6 +894,12 @@ input:focus{
     #linefix{
         margin-right: 70px;
     }
+    #sidebar{
+        width: 70%;
+    }
+    #closer{
+        margin-top: 30px;
+    }
     
 }
 
@@ -826,6 +941,9 @@ input:focus{
     .nav{
         height: 76px;
     }
+    #closer{
+        margin-top: 21.5px;
+    }
 }
 
 @media (max-width: 375px){
@@ -851,6 +969,9 @@ input:focus{
     }
     .lp2fix{
         margin-top: 12px;
+    }
+    #closer{
+        margin-top: 16px;
     }
 }   
 
@@ -895,11 +1016,15 @@ input:focus{
     .lp2fix{
         margin-top: 14px;
     }
+    #closer{
+        margin-top: 14px;
+    }
 }    
 
 @media (max-width: 280px){
-    #card{
-        width: 260px;
+    #logo{
+        max-width: 190px;
+        margin-left: 18px;
     }
     #card-bottom{
         width: 260px;
@@ -927,6 +1052,7 @@ input:focus{
     }
     .lp2fix{
         margin-top: 12px;
-    }  
+    }
+    
 }
 

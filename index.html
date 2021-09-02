@@ -14,20 +14,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
     </head>
     <body style="overflow-x: hidden;">
+        <div id="sidebar" class="collapsed">
+            <button id="closer" title="Close sidebar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18H20M4 6H20H4ZM4 12H12H4Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>          
+            </button>
+            <ul class="flex-col-n subhead " style="list-style-type: none;">
+                <li class="navlink mt" style="color: #0050ff;"><a href="#landingpage">ABOUT ME</a></li>
+                <li class="navlink mt"><a href="#resume">RESUME</a></li>
+                <li class="navlink mt"><a href="#project">PROJECTS</a></li>
+                <li class="navlink mt"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
         <div class="flex-row nav">
             <!--
             <div class="flex-row myname" style="margin-left: 28px;"><span id="rect"></span><span class="name">Abhishek Gautam</span><span class="subhead">/ UI UX </span></div>
             -->
             <img id="logo" src="./assets/logo.svg">
             <div class="flex-row">
+            <div class="flex-row navdiv">
                 <ul class="flex-row subhead navbar">
-                    <li class="navlink" style="color: #0050ff;">ABOUT ME</li>
-                    <li class="navlink">RESUME</li>
-                    <li class="navlink">PROJECTS</li>
-                    <li class="navlink">CONTACT</li>
+                    <li class="navlink" style="color: #0050ff;"><a href="#landingpage">ABOUT ME</a></li>
+                    <li class="navlink"><a href="#resume">RESUME</a></li>
+                    <li class="navlink"><a href="#project">PROJECTS</a></li>
+                    <li class="navlink"><a href="#contact">CONTACT</a></li>
                 </ul> 
             </div>
-            
+            <button title="Toggle sidebar" id="closebt">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            </div>
         </div>
         
         <div class="flex-row-n" id="landingpage" style="width: 100vw;">
@@ -57,8 +76,8 @@
                     <div class="lp-para subhead" style="margin-top: 22px;"><strong>B.TECH IT</strong> 2018-22</div>
                     <div class="lp-para subhead" style="margin-top: 12px;">Guru Tegh Bahadur Institute of Technology, New Delhi</div>
                     <div class="flex-row lp-para subhead" style="margin-top: 32px; font-size:small; ">   
-                        <div onclick="" class="button1" >RESUME</div>
-                        <div class="button2" style="margin-left: 12px;" >PROJECTS</div>                       
+                        <div onclick="window.location.href='#resume'" class="button1" id="resume">RESUME</div>
+                        <div onclick="window.location.href='#project'"  class="button2" style="margin-left: 12px;" >PROJECTS</div>                       
                     </div>
                 </div>
             </div>
@@ -77,7 +96,7 @@
                 </div>
                 <div class="flex-col cardeffect">
                     <div class="face1"><img src="cards/coder.png" height="150px" width="200px"></div>
-                    <div class="face2" >
+                    <div class="face2" id="project">
                         <div class="subhead" style="margin-top: 22px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>DEVELOPER</strong> CV</div>
                     </div>
                 </div>   
@@ -297,7 +316,7 @@
             </div>
         </div>
         
-        <div class="flex-col" style="align-items: center;">
+        <div class="flex-col" style="align-items: center;" id="contact">
             <div class="name over" style="font-size: x-large; margin-top: 48px;">CONTACT ME</div>
             <div class="line over" style=" margin-top: 18px;"></div>
             <div class="subhead" style="margin-top: 18px;">WRITE AN <strong>E-MAIL</strong></div>
@@ -332,6 +351,6 @@
             </div>
         </div>
 
-        <script src="" async defer></script>
+        <script src="./script.js" async defer></script>
     </body>
 </html>
