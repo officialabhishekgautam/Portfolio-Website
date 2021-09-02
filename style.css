@@ -523,7 +523,12 @@ a:hover{
     color:#0050ff;
 }
 
-
+#sidebarlinks{
+    align-items:flex-start;
+    justify-content: flex-start;
+    margin-left: 24px;
+    margin-top: 10px;
+}
 
 @media (max-width: 1920px) { 
     

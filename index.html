@@ -20,12 +20,12 @@
                     <path d="M4 18H20M4 6H20H4ZM4 12H12H4Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>          
             </button>
-            <ul class="flex-col-n subhead " style="list-style-type: none;">
-                <li class="navlink mt" style="color: #0050ff;"><a href="#landingpage">ABOUT ME</a></li>
-                <li class="navlink mt"><a href="#resume">RESUME</a></li>
-                <li class="navlink mt"><a href="#project">PROJECTS</a></li>
-                <li class="navlink mt"><a href="#contact">CONTACT</a></li>
-            </ul>
+            <div class="flex-col-n subhead" id="sidebarlinks">
+                <button class="navlink mt" style="color: #0050ff;"><a class="subhead" href='#landingpage'>ABOUT ME</a></button>
+                <button class="navlink mt"><a class="subhead" href='#resume' >RESUME</a></button>
+                <button class="navlink mt"><a class="subhead" href='#project' >PROJECTS</a></button>
+                <button class="navlink mt"><a class="subhead" href='#contact'>CONTACT</a></button>
+            </div>
         </div>
         <div class="flex-row nav">
             <!--
@@ -34,7 +34,7 @@
             <img id="logo" src="./assets/logo.svg">
             <div class="flex-row">
             <div class="flex-row navdiv">
-                <ul class="flex-row subhead navbar">
+                <ul class="flex-row-n subhead navbar">
                     <li class="navlink" style="color: #0050ff;"><a href="#landingpage">ABOUT ME</a></li>
                     <li class="navlink"><a href="#resume">RESUME</a></li>
                     <li class="navlink"><a href="#project">PROJECTS</a></li>
@@ -59,12 +59,12 @@
                     <span class="subhead " style=" margin-top: 22px;">UI UX DESIGNER</span>
                     <span class="subhead " style=" margin-top: 14px;">ASPIRING DEVELOPER</span>
                     <div class="flex-row " id="card-bottom">
-                        <div class="px"><img src="./social/fb.svg"></div>
-                        <div class="px"><img src="./social/linkedin.svg"></div>
-                        <div class="px"><img src="./social/insta.svg"></div>
-                        <div class="px"><img src="./social/behance.svg"></div>
-                        <div class="px"><img src="./social/dribble.svg"></div>
-                        <div class="px"><img src="./social/github.svg"></div>
+                        <div onclick="window.open('https://www.facebook.com/officialabhishekgautam','_blank')" class="px"><img src="./social/fb.svg"></div>
+                        <div onclick="window.open('https://www.linkedin.com/in/abhishekgautamofficial/','_blank')" class="px"><img src="./social/linkedin.svg"></div>
+                        <div onclick="window.open('https://www.instagram.com/official_abhishek_g/','_blank')" class="px"><img src="./social/insta.svg"></div>
+                        <div onclick="window.open('https://www.behance.net/udibabaabhishek','_blank')" class="px"><img src="./social/behance.svg"></div>
+                        <div onclick="window.open('https://dribbble.com/udi_baba_abhishek','_blank')" class="px"><img src="./social/dribble.svg"></div>
+                        <div onclick="window.open('https://github.com/officialabhishekgautam','_blank')" class="px"><img src="./social/github.svg"></div>
                     </div>
                 </div>
             </div>
@@ -88,13 +88,13 @@
             <div class="line" style=" margin-top: 18px;"></div>
             <div class="subhead " style="margin: 18px 0px 0px 0px; font-size: large;">I HAVE <strong>TWO MODES</strong></div>
             <div class="flex-row modes"  style=" margin-top: 48px; margin-bottom: 52px;">
-                <div class="flex-col cardeffect">
+                <div class="flex-col cardeffect"  onclick="window.open('./resume/designer.pdf','_blank')" >
                     <div class="face1"><img src="cards/designer.png" height="150px" width="200px"></div>
                     <div class="face2" >
                         <div class="subhead" style="margin-top: 22px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>DESIGNER</strong> CV</div>
                     </div>
                 </div>
-                <div class="flex-col cardeffect">
+                <div class="flex-col cardeffect"  onclick="window.open('./resume/dev.pdf','_blank')" >
                     <div class="face1"><img src="cards/coder.png" height="150px" width="200px"></div>
                     <div class="face2" id="project">
                         <div class="subhead" style="margin-top: 22px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>DEVELOPER</strong> CV</div>
@@ -129,7 +129,7 @@
             </div>
             <div class="flex-row cardrow" >
                 
-                <div class="flex-col cardeffect firstcard">
+                <div class="flex-col cardeffect firstcard"  onclick="window.open('https://www.behance.net/gallery/122389397/MyMandi-Splash-Screen-Landing-Page-UI-UX','_blank')" >
                     <div class="face3"><img src="cards/mymandi.png" height="150px" width="200px"></div>
                     <div class="face4">
                         <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>MY MANDI</strong></div>
@@ -141,7 +141,7 @@
                     </div>
                 </div>
 
-                <div class="flex-col cardeffect" onclick="windows.href">
+                <div class="flex-col cardeffect"  onclick="window.open('https://www.behance.net/gallery/123533715/SafeChain-Crypto-Website-Design-UI-UX','_blank')" >
                     <div class="face3"><img src="cards/safechain.png" height="150px" width="200px"></div>
                     <div class="face4">
                         <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>SAFECHAIN</strong></div>
@@ -154,7 +154,7 @@
                     </div>
                 </div> 
 
-                <div class="flex-col cardeffect">
+                <div class="flex-col cardeffect"  onclick="window.open('https://www.behance.net/gallery/118163995/Covid-19-Essentials-App-UI-UX-Design-Interaction-D','_blank')" >
                     <div class="face3"><img src="cards/covid.png" height="150px" width="200px"></div>
                     <div class="face4">
                         <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>COVID ESSENTIALS</strong></div>
@@ -166,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="flex-col cardeffect">
+                <div class="flex-col cardeffect"  onclick="window.open('https://www.behance.net/gallery/123474365/Solshiba-Website-Design-UI-UX-Doge-Coin','_blank')" >
                     <div class="face3"><img src="cards/solshiba.png" height="150px" width="200px"></div>
                     <div class="face4">
                         <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>SOLSHIBA</strong></div>
@@ -179,7 +179,7 @@
                     </div>
                 </div>
                 
-                <div class="flex-col cardeffect lastcard">
+                <div class="flex-col cardeffect lastcard"  onclick="window.open('https://www.behance.net/udibabaabhishek','_blank')" >
                     <div class="face3"><img src="cards/be.gif" height="150px" width="200px"></div>
                     <div class="face4">
                         <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>PORTFOLIO</strong></div>
@@ -198,7 +198,7 @@
             <div class="flex-row cardrow dev">
                 
                 
-                    <div class="flex-col cardeffect firstcard">
+                    <div class="flex-col cardeffect firstcard"  onclick="window.open('https://officialabhishekgautam.github.io/Coaching-Professional-website-using-Tailwind-CSS/','_blank')" >
                         <div class="face3"><img src="cards/coaching.png" height="150px" width="200px"></div>
                         <div class="face4">
                             <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px; line-height: 20px;"><strong>COACHING</strong></div>
@@ -212,7 +212,7 @@
                     </div>
                 
                 
-                    <div class="flex-col cardeffect lastcard">
+                    <div class="flex-col cardeffect lastcard"  onclick="window.open('https://github.com/officialabhishekgautam','_blank')" >
                         <div class="face3"><img src="cards/github.gif" height="150px" width="200px"></div>
                         <div class="face4">
                             <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px; line-height: 20px;"><strong>GITHUB</strong></div>
@@ -231,7 +231,7 @@
             </div>
             <div class="flex-row cardrow">
                 
-                <div class="flex-col cardeffect firstcard">
+                <div class="flex-col cardeffect firstcard"  onclick="window.open('https://www.behance.net/gallery/122600827/Social-Media-Banner-SOLSWAP-Crypto-Branding','_blank')" >
                     <div class="face3"><img src="cards/solswap.jpg" height="150px" width="200px"></div>
                     <div class="face4">
                         <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>SOLSWAP BANNER</strong></div>
@@ -243,7 +243,7 @@
                     </div>
                 </div>
 
-                <div class="flex-col cardeffect" onclick="windows.href">
+                <div class="flex-col cardeffect"   onclick="window.open('https://www.behance.net/gallery/123633861/Proteck-Paints-Product-Packaging-Design','_blank')" >
                     <div class="face3"><img src="cards/paints.png" height="150px" width="200px"></div>
                     <div class="face4">
                         <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>PROTECK PAINTS</strong></div>
@@ -255,7 +255,7 @@
                     </div>
                 </div> 
 
-                <div class="flex-col cardeffect">
+                <div class="flex-col cardeffect"  onclick="window.open('https://www.behance.net/gallery/123529373/SafeChain-Crypto-Vault-Logo-Design','_blank')" >
                     <div class="face3"><img src="cards/logo.png" height="150px" width="200px"></div>
                     <div class="face4">
                         <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>SAFECHAIN LOGO</strong></div>
@@ -268,7 +268,7 @@
                     </div>
                 </div>
 
-                <div class="flex-col cardeffect">
+                <div class="flex-col cardeffect" onclick="window.open('https://www.behance.net/gallery/119281559/3D-Avatar-Illustration-Design-Brand-Identity','_blank')" >
                     <div class="face3"><img src="cards/illustration.jpg" height="150px" width="200px"></div>
                     <div class="face4">
                         <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>3D AVATAR</strong></div>
@@ -281,7 +281,7 @@
                     </div>
                 </div>
                 
-                <div class="flex-col cardeffect lastcard">
+                <div class="flex-col cardeffect lastcard"  onclick="window.open('https://www.behance.net/udibabaabhishek','_blank')" >
                     <div class="face3"><img src="cards/be.gif" height="150px" width="200px"></div>
                     <div class="face4">
                         <div class="subhead p-8" style=" margin-top: 14px; font-size: small; text-align: center; margin-left: 0px; letter-spacing: 2px;"><strong>PORTFOLIO</strong></div>
@@ -338,14 +338,15 @@
                 </div>
                 
                 <div class="flex-row ">
-                    <div class="px"><img src="./social/fb.svg"></div>
-                    <div class="px"><img src="./social/linkedin.svg"></div>
-                    <div class="px"><img src="./social/insta.svg"></div>
-                    <div class="px"><img src="./social/behance.svg"></div>
-                    <div class="px"><img src="./social/github.svg"></div>
+                    <div  onclick="window.open('https://www.facebook.com/officialabhishekgautam','_blank')"  class="px"><img src="./social/fb.svg"></div>
+                    <div  onclick="window.open('https://www.linkedin.com/in/abhishekgautamofficial/','_blank')"  class="px"><img src="./social/linkedin.svg"></div>
+                    <div  onclick="window.open('https://www.instagram.com/official_abhishek_g/','_blank')"  class="px"><img src="./social/insta.svg"></div>
+                    <div  onclick="window.open('https://www.behance.net/udibabaabhishek','_blank')"  class="px"><img src="./social/behance.svg"></div>
+                    <div  onclick="window.open('https://github.com/officialabhishekgautam','_blank')"  class="px"><img src="./social/github.svg"></div>
                 </div>
                 <div class="subhead bottom">
                     <p>© 2021 by Abhishek Gautam.</p>
+                    <p>Among us X Gaming nibbas</p>
                     <p>Proudly created with <strong>HTML CSS JS</strong></p>
                 </div>   
             </div>
