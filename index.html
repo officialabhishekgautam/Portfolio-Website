@@ -12,6 +12,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
     </head>
     <body style="overflow-x: hidden;">
         <div id="sidebar" class="collapsed ">
@@ -41,7 +43,7 @@
                     <li class="navlink"><a href="#contact">CONTACT</a></li>
                 </ul> 
             </div>
-            <button title="Toggle sidebar" id="closebt" class="btfun" >
+            <button title="Toggle sidebar" id="closebt" class="btfun " >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 18H20M4 6H20H4ZM4 12H20H4Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -323,11 +325,11 @@
             <div class="flex-col" style="align-items: center; margin-top: 22px;">
                 <div class="flex-row-n" id="contactform">
                     <div class="flex-row-n contactimg"><img src="hi.gif" height="150px"></div>
-                    <form class="flex-col-n bg3 formbox" id="my_form" target="_blank" action="mailto:officialabhishekgautam@gmail.com" method="post" enctype="text/plain">
+                    <form class="flex-col-n bg3 formbox" id="my_form" >
                         <input class="input form bg3" type="text" name="name" placeholder="NAME *" required>
                         <input class="input form bg3" type="email" name="email" placeholder="EMAIL *" required>
                         <input class="input form bg3" type="text" name="message" placeholder="YOUR MESSAGE">
-                        <button class="subhead send"  type="submit">
+                        <button class="subhead send bg3"  type="submit" onclick="sendEmail()">
                             <div class="button1">SEND</div>
                         </button>
                     </form>
