@@ -325,11 +325,11 @@
             <div class="flex-col" style="align-items: center; margin-top: 22px;">
                 <div class="flex-row-n" id="contactform">
                     <div class="flex-row-n contactimg"><img src="hi.gif" height="150px"></div>
-                    <form class="flex-col-n bg3 formbox" id="my_form" >
-                        <input class="input form bg3" type="text" name="name" placeholder="NAME *" required>
-                        <input class="input form bg3" type="email" name="email" placeholder="EMAIL *" required>
-                        <input class="input form bg3" type="text" name="message" placeholder="YOUR MESSAGE">
-                        <button class="subhead send bg3"  type="submit" onclick="sendEmail()">
+                    <form class="flex-col-n bg3 formbox" id="my_form" method="POST" action="http://localhost:3000/email">
+                        <input class="input form bg3" type="text" name="name" id="name" placeholder="NAME *" required>
+                        <input class="input form bg3" type="email" name="email" id="email" placeholder="EMAIL *" required>
+                        <input class="input form bg3" type="text" name="message" id="message" placeholder="YOUR MESSAGE">
+                        <button class="subhead send bg3"  type="submit" >
                             <div class="button1">SEND</div>
                         </button>
                     </form>
@@ -347,7 +347,6 @@
                 </div>
                 <div class="subhead bottom">
                     <p>© 2021 by Abhishek Gautam.</p>
-                    <p>Among us X Gaming nibbas</p>
                     <p>Proudly created with <strong>HTML CSS JS</strong></p>
                 </div>   
             </div>
