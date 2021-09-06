@@ -1,7 +1,0 @@
-/*******************************************************
- * Copyright (C) 2021 Abhishek Gautam <officialabhishekgautam@gmail.com>
- * 
- * 
- * https://github.com/officialabhishekgautam/Portfolio-Website can not be copied and/or distributed without the express
- * permission of Abhishek Gautam
- *******************************************************/
