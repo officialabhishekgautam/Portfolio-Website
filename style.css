@@ -50,7 +50,7 @@ body{
 
 }
 .bgimg{
-    background-image: url("doodle.jpg");
+    background-image: url("./assets/doodle.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -236,7 +236,7 @@ input:focus{
 }
 
 .hd2{
-    background-image: url('bg.gif');
+    background-image: url('./assets/bg.gif');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4px 8px 4px 8px;
@@ -412,7 +412,7 @@ input:focus{
     width: 200px;
     height: 250px;
     align-items: center;
-    background-image: url('bg.gif');
+    background-image: url('./assets/bg.gif');
     background-size: cover;
 }
 
@@ -835,7 +835,7 @@ a:hover{
         margin-left: 32px;
     }
     .bgimg{
-        background-image: url("bgimg5.png");
+        background-image: url("./assets/bgimg5.png");
     }
      
  }
@@ -864,7 +864,7 @@ a:hover{
         height: 250px;
         align-items: center;
         justify-content: center;
-        background-image: url('bg.gif');
+        background-image: url('./assets/bg.gif');
         background-size: cover;
     }
 
