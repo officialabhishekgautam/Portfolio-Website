@@ -19,6 +19,7 @@
   "homepage": "https://github.com/officialabhishekgautam/Portfolio-Website#readme",
   "dependencies": {
     "googleapis": "^85.0.0",
+    "license-generator": "0.0.13",
     "nodemailer": "^6.6.3"
   }
 }

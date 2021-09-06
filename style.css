@@ -490,6 +490,11 @@ button{
     padding-top: 4px;
 }
  
+#license{
+    text-decoration: underline;
+    color: #0050ff;
+}
+
 #closebt{
     margin-right: 18px;
 }
